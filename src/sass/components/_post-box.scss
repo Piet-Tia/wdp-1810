@@ -1,6 +1,10 @@
 .post-box {
   margin-bottom: 2rem;
   
+  > a {
+    text-decoration: none;
+  }
+
   .cover {
     padding: 70% 25px 0 25px;
     background: {
@@ -12,6 +16,7 @@
     .details {
       padding: 15px 20px;
       display: flex;
+      color: #000000;
       background-color: #ffffff;
       font-size: 14px;
 
@@ -52,12 +57,16 @@
     }
   }
 
-  &:hover .post-info {
-    h5 {
-      color: $primary;
-    }
-    .more .btn-main {
-      background-color: $primary;
+  &:hover {
+    .post-info {
+      h5 {
+        color: $primary;
+      }
+      .more {
+        .btn-main {
+          background-color: $primary;
+        }
+      }
     }
   }
 }
