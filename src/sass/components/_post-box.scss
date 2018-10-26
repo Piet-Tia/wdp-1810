@@ -33,7 +33,7 @@
     padding: 25px;
 
     h5 {
-      color: $primary;
+      color: rgb(103,103,103);
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -50,5 +50,9 @@
       text-align: center;
       padding-top: 30px;
     }
+  }
+
+  &:hover .post-info h5{
+    color: $primary;
   }
 }
