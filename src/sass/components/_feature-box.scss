@@ -63,13 +63,6 @@
   }
 }
 
-
-// this is not working, but I cannot find any higher specificity selector overwriting this:
-.feature-link {
+.feature-link:hover {
   text-decoration: none;
-}
-
-// this is a workaround, alternatively I could use !important with class selector above
-#feature-link-1, #feature-link-2, #feature-link-3, #feature-link-4 {
-  text-decoration: none ;
 }
