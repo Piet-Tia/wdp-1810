@@ -43,16 +43,17 @@ header {
   .company-claim {
     background-color: $header-bg;
 
-    .container > .row {
+    .container>.row {
       height: 145px;
     }
 
-    .phone-number {
+    .phone-number,
+    .phone-number--mobile {
       p {
         margin: 0;
         font-size: 17px;
         line-height: 42px;
-        color: rgb(216,216,216);
+        color: rgb(216, 216, 216);
         font-weight: 500;
 
         i {
@@ -65,11 +66,14 @@ header {
       }
     }
 
+
+
     .cart {
 
       .cart-box {
         display: inline-block;
         position: relative;
+        right: 10px;
         color: #ffffff;
 
         .cart-icon {
@@ -97,7 +101,7 @@ header {
           align-items: center;
           justify-content: flex-start;
           font-size: 14px;
-          color: rgb(224,227,237);
+          color: rgb(224, 227, 237);
           position: absolute;
           top: 50%;
           right: 0;
@@ -111,13 +115,17 @@ header {
         }
       }
     }
+
+    .phone-number--mobile {
+      display: none;
+    }
   }
 
   .menu-bar {
-    box-shadow: 2px 3.464px 6px rgba(1,2,2,0.2);
+    box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
     background-color: #ffffff;
 
-    .container > .row {
+    .container>.row {
       height: 84px;
     }
 
@@ -219,6 +227,53 @@ header {
           border: 0;
           background-color: transparent;
           outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+
+    .top-bar__right-text {
+      display: none;
+    }
+
+    .company-claim {
+      position: relative;
+
+      .phone-number {
+        display: none;
+      }
+
+      .logo__column {
+        border: 1px solid red;
+        width: 50%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+
+      .company-claim__logo {
+        float: left;
+        display: block;
+      }
+
+      .cart {
+        border: 1px solid green;
+        width: 50%;
+        position: absolute;
+        top: 10px;
+        right: 0;
+
+        .phone-number--mobile {
+          display: block;
+
+          p {
+            font-size: 14px;
+            float: right;
+          }
         }
       }
     }
