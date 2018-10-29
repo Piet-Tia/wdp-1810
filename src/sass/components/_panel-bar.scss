@@ -74,6 +74,7 @@
         margin-left: 0.5rem;
 
         a {
+          @extend .hover-animation;
           display: block;
           width: 13px;
           height: 13px;
