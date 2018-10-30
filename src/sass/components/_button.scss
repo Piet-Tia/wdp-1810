@@ -1,6 +1,8 @@
 .btn-main {
+  @extend .hover-animation;
   background-color: $text-color;
   color: $total-white;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -22,6 +24,7 @@
 }
 
 .btn-outline {
+  @extend .hover-animation;
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid $text-color;

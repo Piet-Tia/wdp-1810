@@ -14,6 +14,14 @@
     }
     overflow: hidden;
     align-items: flex-end;
+    
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      height: auto;
+    }
 
     .sale {
       position: absolute;
@@ -27,6 +35,7 @@
     }
 
     .buttons {
+      position: relative;
       display: flex;
       justify-content: space-between;
     }

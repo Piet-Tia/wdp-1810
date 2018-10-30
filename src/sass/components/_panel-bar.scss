@@ -41,19 +41,27 @@
         a {
           color: rgb(42,42,42);
           position: relative;
+
           text-decoration: none;
           font-size: 18px;
           display: block;
+
+          &::before {
+            content: '';
+            @extend .hover-animation;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            border-bottom: 4px solid $primary;
+            opacity: 0;
+          }
 
           &.active,
           &:hover {
             &::before {
               content: '';
-              position: absolute;
-              bottom: -4px;
-              left: 0;
-              width: 100%;
-              border-bottom: 4px solid $primary;
+              opacity: 1;
             }
           }
         }
@@ -74,6 +82,7 @@
         margin-left: 0.5rem;
 
         a {
+          @extend .hover-animation;
           display: block;
           width: 13px;
           height: 13px;
