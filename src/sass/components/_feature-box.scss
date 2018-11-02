@@ -73,18 +73,40 @@
 
 @media (max-width: 575.98px) { 
   .feature-box {
+    height: 150px;
+  } 
+}
+
+@media (min-width: 576px) {  
+  .feature-box {
     height: 120px;
   } 
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 768px) {  
   .feature-box {
     height: 150px;
+    h5 {
+      font-size:18px;
+      padding: 0 10px;
+    }
+    p {
+      font-size: 0.8rem;
+    }
   } 
- }
+}
 
-@media (min-width: 1200px) { 
+@media (min-width: 992px) {
+  .feature-box { 
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1199.99px) { 
   .feature-box {
     height: 120px;
   } 
  }
+ 
