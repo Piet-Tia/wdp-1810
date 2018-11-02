@@ -30,7 +30,7 @@
       padding: 15px 20px;
       display: flex;
       color: $text-color;
-      background-color: $total-white;
+      background-color: $post-box-background;
       font-size: 14px;
 
       & > * {
@@ -51,7 +51,7 @@
     padding: 25px;
 
     h5 {
-      color: $grey-rgb-103;
+      color: $post-info-text;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -60,7 +60,7 @@
     p {
       font-size: 14px;
       line-height: 24px;
-      color: $grey-rgb-103;
+      color: $post-info-text;
       text-align: justify;
     }
 
