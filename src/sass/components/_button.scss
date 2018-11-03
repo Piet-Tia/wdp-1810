@@ -1,14 +1,15 @@
 .btn-main {
   @extend .hover-animation;
-  background-color: #2a2a2a;
-  color: #ffffff;
+  background-color: $text-color;
+  color: $total-white;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   padding: 10px 30px;
 
   &:not(.no-hover):hover {
-    color: #ffffff !important;
+    color: $total-white !important;
     background-color: $primary;
     text-decoration: none;
   }
@@ -26,13 +27,26 @@
   @extend .hover-animation;
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #2a2a2a;
-  color: #2a2a2a;
+  border: 1px solid $text-color;
+  color: $text-color;
   font-size: 13px;
   line-height: 22px;
 
   &:hover {
-    background-color: #2a2a2a;
-    color: #ffffff;
+    background-color: $primary;
+    color: $total-white;
+    border: 1px solid $primary;
+  }
+
+  &.active {
+    background-color: $primary;
+    color: $total-white;
+    border: 1px solid $primary;
+
+    &:hover {
+      color: $text-color;
+      background-color: $total-white;
+      border: 1px solid $text-color;
+    }
   }
 }
