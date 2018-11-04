@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "npm run build && npm-run-all -p watch:*",
+    "watch:html": "onchange \"src/**/*.html\" -- npm run copy:html",
     "watch:images": "onchange \"src/images/**/*\" -- npm run copy:images",
     "watch:scripts": "onchange \"src/scripts/**/*\" -- npm run copy:scripts",
     "watch:webfonts": "onchange \"src/webfonts/**/*\" -- npm run copy:webfonts",
