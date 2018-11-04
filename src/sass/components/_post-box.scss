@@ -1,6 +1,10 @@
 .post-box {
   margin-bottom: 2rem;
   
+  > a {
+    text-decoration: none;
+  }
+
   .cover {
     position: relative;
     padding: 70% 25px 0 25px;
@@ -25,7 +29,8 @@
       position: relative;
       padding: 15px 20px;
       display: flex;
-      background-color: #ffffff;
+      color: $text-color;
+      background-color: $post-box-background;
       font-size: 14px;
 
       & > * {
@@ -46,7 +51,7 @@
     padding: 25px;
 
     h5 {
-      color: $primary;
+      color: $post-info-text;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -55,13 +60,26 @@
     p {
       font-size: 14px;
       line-height: 24px;
-      color: rgb(103,103,103);
+      color: $post-info-text;
       text-align: justify;
     }
 
     .more {
       text-align: center;
       padding-top: 30px;
+    }
+  }
+
+  &:hover {
+    .post-info {
+      h5 {
+        color: $primary;
+      }
+      .more {
+        .btn-main {
+          background-color: $primary;
+        }
+      }
     }
   }
 }
