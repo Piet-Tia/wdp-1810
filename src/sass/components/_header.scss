@@ -48,7 +48,8 @@ header {
       height: 145px;
     }
 
-    .phone-number {
+    .phone-number,
+    .phone-number--mobile {
       p {
         margin: 0;
         font-size: 17px;
@@ -66,11 +67,14 @@ header {
       }
     }
 
+
+
     .cart {
 
       .cart-box {
         display: inline-block;
         position: relative;
+        right: 10px;
         color: #ffffff;
 
         .cart-icon {
@@ -112,6 +116,10 @@ header {
           }
         }
       }
+    }
+
+    .phone-number--mobile {
+      display: none;
     }
   }
 
@@ -379,6 +387,51 @@ header {
           transform: translateY(-50%);
         }
 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+
+    .top-bar__right-text {
+      display: none;
+    }
+
+    .company-claim {
+      position: relative;
+
+      .phone-number {
+        display: none;
+      }
+
+      .logo__column {
+        width: 50%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+
+      .company-claim__logo {
+        float: left;
+        display: block;
+      }
+
+      .cart {
+        width: 50%;
+        position: absolute;
+        top: 10px;
+        right: 0;
+
+        .phone-number--mobile {
+          display: block;
+
+          p {
+            font-size: 14px;
+            float: right;
+          }
+        }
       }
     }
   }
