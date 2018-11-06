@@ -1,0 +1,189 @@
+.section-promo {
+    position: relative;
+
+    .photo {
+        &:hover {
+            .counters {
+            display: block;
+            }
+        }
+    }
+
+    .sale1 {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: left;
+        background-color: $header-bg;
+        color: $total-white;
+        padding: 10px 15px 10px 15px;
+    }
+
+    .dots-promo {
+        position: absolute;
+        top: -35px;
+        right: 20px;
+      
+        ul {
+        list-style-type: none;
+        display: block;
+        color: $total-white;
+        transform:rotate(90deg);
+        }
+            
+        a { 
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border-radius: 12px;
+            background-color: $dots-color;
+                
+            &:hover {
+                background-color: $primary;
+            }
+
+        }
+    }
+}
+
+.counters {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+
+    .btn-main-small {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+      
+    ul {
+        margin: 30px 10px 10px 10px;
+        padding: 0;
+        list-style-type:none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: stretch;
+        color: $total-white;
+
+        li {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            display: flex;
+            flex-direction: row;
+       
+            a { 
+                justify-content: center;
+                color: $total-white;
+                text-align: center;
+                margin: 0 auto;
+                padding: 0 auto;
+
+                .top {
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    font-size: 16px
+                }
+                .bottom {
+                    margin-bottom: 10px;
+                    font-size: 10px
+                }
+            }
+        }
+    }
+}
+
+
+.promo-slide {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 32px;
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .left-button {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: -50%;
+        text-align: right;
+        color: $total-white;
+        background-color: $header-bg;
+        padding: 5px 200px 5px 15px;
+        font-size: 20px;
+        font-weight: 900;
+        
+        &:hover {
+            background-color: $primary;
+        }
+    }
+
+    .right-button {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        text-align: left;
+        color: $total-white;
+        background-color: $header-bg;
+        padding: 5px 15px 5px 200px;
+        font-size: 20px;
+        font-weight: 900;
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+
+    .text-on {
+        width: 100%;
+        position: absolute;
+        top: 22%;
+        left: 0%;
+        text-align: center;
+        color: $total-white;
+        background-color: rgba($color: $header-bg, $alpha: 0.4);
+        padding: 40px 15px 40px 50px;
+        
+        p {
+        font-size: 38px;
+        font-weight: 100;
+        display:inline;
+        }  
+        h1 {
+        display:inline;
+        font-weight: 700;
+        }
+        h5 {
+            font-weight: 100;
+        }
+    }
+
+    button {
+        width: 20%;
+        height: 10%;
+        position: absolute;
+        margin-top: 30px;
+        top: 50%;
+        left: 40%;
+        border-radius: 5px;
+    }
+
+}
