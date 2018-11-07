@@ -31,8 +31,13 @@
         color: $total-white;
         transform:rotate(90deg);
         }
+
+        .active {
+            background-color: $primary;
+        }
             
         a { 
+            @extend .hover-animation;
             display: inline-block;
             width: 13px;
             height: 13px;
@@ -84,6 +89,7 @@
                 text-align: center;
                 margin: 0 auto;
                 padding: 0 auto;
+                text-decoration: none;
 
                 .top {
                     margin-top: 10px;
@@ -119,6 +125,7 @@
 
 
     .left-button {
+        @extend .hover-animation;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -136,6 +143,7 @@
     }
 
     .right-button {
+        @extend .hover-animation;
         width: 100%;
         position: absolute;
         bottom: 0;
