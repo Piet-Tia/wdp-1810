@@ -35,14 +35,14 @@
 
     .dots-promo {
         position: absolute;
-        top: -35px;
+        top: 5px;
         right: 20px;
       
         ul {
         list-style-type: none;
         display: block;
         color: $total-white;
-        transform:rotate(90deg);
+        transform:rotate(-90deg);
         }
 
         .active {

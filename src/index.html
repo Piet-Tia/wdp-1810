@@ -185,13 +185,13 @@
           <div class="col-4">          
               <div class="product-box box1">
                   <div class="photo">
-                    <img src="./images/photo-fur01.png">
+                    <img class="slider-left" src="./images/photo-fur01.png">
                     <div class="top_header">HOT DEALS</div>
                     <div class="dots-promo">
                         <ul>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                          <li><a href="#" class="active"></a></li>
+                          <li><a data-move="1" class="topDot active" href="#"></a></li>
+                          <li><a data-move="2" class="topDot" href="#"></a></li>
+                          <li><a data-move="3" class="topDot" href="#"></a></li>
                         </ul>
                     </div>
 
@@ -239,7 +239,7 @@
           </div>
           <div class="col-8 promo-slide">
             <div class="photo">
-              <img src="./images/promo_01.png">
+              <img class="slider-right" src="./images/blog_01.png">
               <div class="text-on">
                 <p>INDOOR </p><h1>FURNITURE</h1>
                 <h5>SAVE UP TO 50% OF ALL FURNITURE</h4>
@@ -774,6 +774,7 @@
     crossorigin="anonymous"></script>
   <script src="./scripts/bootstrap.min.js"></script>
   <script src="./scripts/app.js"></script>
+  <script src="./scripts/slider-top-promo.js"></script>
 </body>
 
 </html>
