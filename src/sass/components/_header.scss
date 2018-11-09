@@ -260,7 +260,7 @@ header {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $breakpoint-md) {
   header {
 
     .menu-bar {
@@ -287,7 +287,7 @@ header {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-sm) {
   header {
 
     .top-bar__right-text {
@@ -332,7 +332,7 @@ header {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: $breakpoint-xxs) {
   header {
 
     .menu-bar {
