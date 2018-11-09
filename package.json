@@ -13,7 +13,7 @@
     "watch:browsersync": "browser-sync start --server --files ./ --cwd dist",
     "clean": "rimraf dist",
     "copy:html": "rimraf dist/**/*.html && cpy \"**/*.html\" \"../dist\" --cwd=src --parents",
-    "copy:scripts": "rimraf dist/scripts && cpy \"**/*\" \"../../dist/scripts\" --cwd=src/scripts --parents",
+    "copy:scripts": "rimraf dist/scripts/app.js && cpy \"**/*\" \"../../dist/scripts\" --cwd=src/scripts --parents",
     "copy:webfonts": "rimraf dist/webfonts && cpy \"**/*\" \"../../dist/webfonts\" --cwd=src/webfonts --parents",
     "copy:images": "rimraf dist/images && cpy \"**/*\" \"../../dist/images\" --cwd=src/images --parents",
     "build": "npm-run-all clean copy:* build:*",
