@@ -48,7 +48,7 @@ let indexInterval = setInterval(changeSlide, time);
 //funkcja zmiany slajdu po kliknięciu w dot i ustawienie aktywnego doda
 function dotsChangeSlide () {
 	clearInterval(indexInterval); //zatrzymaj interval
-	var dotAtribute = event.target.getAttribute("data-move"); //pobierz kliknięty dot
+	const dotAtribute = event.target.getAttribute("data-move"); //pobierz kliknięty dot
 	const activeDot = dots.findIndex(dot => dot.classList.contains('active')); //ustal index aktywnego dot
 	dots[activeDot].classList.remove('active'); 
 	dots[dotAtribute-1].classList.add('active'); 
@@ -61,7 +61,7 @@ function dotsChangeSlide () {
 var topDots = document.querySelectorAll('.topDot');
 for(var i = 0; i < topDots.length; i++){
 	topDots[i].addEventListener('click', function(event) { 
-    dotsChangeSlide();
+    	dotsChangeSlide();
     });
 }
 
