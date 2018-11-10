@@ -157,3 +157,15 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-lg) {
+  .product-box-space {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .product-box-space {
+    padding: 5px;
+  }
+}
