@@ -18,36 +18,43 @@ const dots = [...document.querySelectorAll('.dots-promo a')]
 const time = 3000;
 let activeSlide = 0;
 
+//create left slider in html
+const imageLeft = document.createElement('img');
+imageLeft.setAttribute("class", "slider-left" );
+imageLeft.src = leftSlideList[activeSlide].img
+var firstElement = document.querySelector('.section-promo .product-box .photo');
+firstElement.insertBefore(imageLeft, firstElement.firstChild);
+
 //funkcja zmieniająca aktywną kropkę w hederze
 const changeDot = () => {
-let activeDot = dots.findIndex(dot => dot.classList.contains('active'));
-dots[activeDot].classList.remove('active');
-dots[activeSlide].classList.add('active');
+	let activeDot = dots.findIndex(dot => dot.classList.contains('active'));
+	dots[activeDot].classList.remove('active');
+	dots[activeSlide].classList.add('active');
 }
 
 //funkcja zmieniająca automatycznie slajd
 const changeSlide = () => {
-activeSlide++;
-if (activeSlide === leftSlideList.length) {
-	activeSlide = 0;
+	activeSlide++;
+	if (activeSlide === leftSlideList.length) {
+		activeSlide = 0;
 }
-image.src = leftSlideList[activeSlide].img;
+imageLeft.src = leftSlideList[activeSlide].img;
 changeDot(); 
 };
 
 //ustaw interval
-let IndexInterval = setInterval(changeSlide, time);
+let indexInterval = setInterval(changeSlide, time);
 
 //funkcja zmiany slajdu po kliknięciu w dot i ustawienie aktywnego doda
 function dotsChangeSlide () {
-	clearInterval(IndexInterval); //zatrzymaj interval
+	clearInterval(indexInterval); //zatrzymaj interval
 	var dotAtribute = event.target.getAttribute("data-move"); //pobierz kliknięty dot
 	const activeDot = dots.findIndex(dot => dot.classList.contains('active')); //ustal index aktywnego dot
 	dots[activeDot].classList.remove('active'); 
 	dots[dotAtribute-1].classList.add('active'); 
-	image.src = leftSlideList[dotAtribute-1].img; //ustaw zdjęcie
+	imageLeft.src = leftSlideList[dotAtribute-1].img; //ustaw zdjęcie
 	activeSlide = dotAtribute-1; //ustaw slajd na aktualny po uruchomieniu interval
-	IndexInterval = setInterval(changeSlide, time); //uruchom ponownie interval
+	indexInterval = setInterval(changeSlide, time); //uruchom ponownie interval
 }
 
 //czekaj na kliknęcie w dot i wywował funckję
@@ -60,7 +67,7 @@ var topDots = document.querySelectorAll('.topDot');
 
 
 //Prawy slajder
-const RightSildeList = [{
+const rightSildeList = [{
 	img: "./images/blog_01.png",
 },
 {
@@ -70,35 +77,41 @@ const RightSildeList = [{
 	img: "./images/blog_03.png",
 }];
 
-let ActiveRightPhoto = 0; //pierwsze aktywne zdjęcie
-const imageRight = document.querySelector('img.slider-right');
+let activeRightPhoto = 0; //pierwsze aktywne zdjęcie
+
+//create right slider in html
+const imageRight = document.createElement('img');
+imageRight.setAttribute("class", "slider-right" );
+imageRight.src = rightSildeList[activeRightPhoto].img
+var firstElement = document.querySelector('.section-promo .promo-slide .photo');
+firstElement.insertBefore(imageRight, firstElement.firstChild);
 
 //czekaj na kliknęcie w lewą strzałkę i wywowałaj funckję 
-var LeftButton = document.querySelector('.left-button');
-LeftButton.addEventListener('click', function(event) { 
-	ActiveRightPhoto--;
-	ChangeLeftSlide();
+var leftButton = document.querySelector('.left-button');
+leftButton.addEventListener('click', function(event) { 
+	activeRightPhoto--;
+	changeLeftSlide();
 });
 
 //czekaj na kliknęcie w prawą strzałkę i wywowałaj funckję 
-var RightButton = document.querySelector('.right-button');
-RightButton.addEventListener('click', function(event) {
-	ActiveRightPhoto++; 
-    ChangeRightSlide();
+var rightButton = document.querySelector('.right-button');
+rightButton.addEventListener('click', function(event) {
+	activeRightPhoto++; 
+    changeRightSlide();
 });
 
-function ChangeLeftSlide() {
-	if (ActiveRightPhoto < 0) {
-		ActiveRightPhoto = 2;
+function changeLeftSlide() {
+	if (activeRightPhoto < 0) {
+		activeRightPhoto = 2;
 	}
-	imageRight.src = RightSildeList[ActiveRightPhoto].img;
+	imageRight.src = rightSildeList[activeRightPhoto].img;
 }
 
-function ChangeRightSlide() {
-	if (ActiveRightPhoto > 2) {
-		ActiveRightPhoto = 0;
+function changeRightSlide() {
+	if (activeRightPhoto > 2) {
+		activeRightPhoto = 0;
 	}
-	imageRight.src = RightSildeList[ActiveRightPhoto].img;
+	imageRight.src = rightSildeList[activeRightPhoto].img;
 }
 
 });
