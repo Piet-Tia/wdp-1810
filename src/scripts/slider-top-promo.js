@@ -21,7 +21,7 @@ let activeSlide = 0;
 //create left slider in html
 const imageLeft = document.createElement('img');
 imageLeft.setAttribute("class", "slider-left" );
-imageLeft.src = leftSlideList[activeSlide].img
+imageLeft.src = leftSlideList[activeSlide].img;
 var firstElement = document.querySelector('.section-promo .product-box .photo');
 firstElement.insertBefore(imageLeft, firstElement.firstChild);
 
@@ -59,11 +59,11 @@ function dotsChangeSlide () {
 
 //czekaj na kliknęcie w dot i wywował funckję
 var topDots = document.querySelectorAll('.topDot');
-	for(var i = 0; i < topDots.length; i++){
-		topDots[i].addEventListener('click', function(event) { 
-        dotsChangeSlide();
-        });
-    }
+for(var i = 0; i < topDots.length; i++){
+	topDots[i].addEventListener('click', function(event) { 
+    dotsChangeSlide();
+    });
+}
 
 
 //Prawy slajder
@@ -82,7 +82,7 @@ let activeRightPhoto = 0; //pierwsze aktywne zdjęcie
 //create right slider in html
 const imageRight = document.createElement('img');
 imageRight.setAttribute("class", "slider-right" );
-imageRight.src = rightSildeList[activeRightPhoto].img
+imageRight.src = rightSildeList[activeRightPhoto].img;
 var firstElement = document.querySelector('.section-promo .promo-slide .photo');
 firstElement.insertBefore(imageRight, firstElement.firstChild);
 
