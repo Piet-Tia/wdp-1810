@@ -102,6 +102,15 @@
             color: $primary;
           }
         }
+        &.star-full {
+          @extend .fas;
+          color: $primary;
+        }
+
+        &.star-outline {
+          @extend .far;
+          color: $primary;
+        }
 
       }
     }
