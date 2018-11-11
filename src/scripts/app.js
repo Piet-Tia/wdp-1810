@@ -1,9 +1,8 @@
 $('.star-rank').click(function () {
-	$(this).removeClass('star-outline not-hover hover');
-	$(this).siblings().removeClass('star-outline not-hover hover');
+	$(this).removeClass('star-full star-outline not-hover hover');
+	$(this).siblings().removeClass('star-full star-outline not-hover hover');
 	
 	$(this).addClass('star-full');
-	$(this).siblings().addClass('star-full');
-	
-	$(this).prevAll().removeClass('star-full').addClass('star-outline');
+	$(this).nextAll().addClass('star-full');
+	$(this).prevAll().addClass('star-outline');
 })
