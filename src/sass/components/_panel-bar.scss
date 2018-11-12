@@ -78,11 +78,17 @@
       list-style: none;
       background-color: #ffffff;
       transform: translateY(15px);
+      cursor: default;
 
       li {
         display: inline-block;
         margin-left: 0.5rem;
         outline: 0;
+        cursor: pointer;
+
+        &.tns-nav-active a {
+          background-color: $primary;
+        }
 
         a {
           @extend .hover-animation;
@@ -171,5 +177,4 @@
       }
     }
   }
-
 }
