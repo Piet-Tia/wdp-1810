@@ -1,29 +1,54 @@
-const furnitureSlider = document.getElementById("furniture-slider");
-const furnitureSliderDots = document.getElementById("dots");
+const DOM = {};
 
+DOM.furnitureSlider = document.getElementById("furniture-slider");
+DOM.furnitureSliderDots = document.getElementById("furniture-dots");
 
-const slider = tns({
-    container: furnitureSlider,
-    items: 1,
+DOM.blogSlider = document.getElementById("blog-slider");
+DOM.blogSliderDots = document.getElementById("blog-dots");
+
+const furnitureSectionSlider = tns({
+	container: DOM.furnitureSlider,
+	items: 1,
 	slideBy: 'page',
 	controls: false,
 	autoplay: true,
 	autoplayButtonOutput: false,
-	navContainer: furnitureSliderDots,
+	navContainer: DOM.furnitureSliderDots,
 	mouseDrag: true,
 	responsive: {
 		576: {
-		  items: 2
+			items: 2
 		},
 		992: {
-		  items: 3
+			items: 3
 		},
 		1200: {
-		  items: 4
+			items: 4
 		}
 	}
-	
-  });
+
+});
 
 
-tns();
+const blogSectionSlider = tns({
+	container: DOM.blogSlider,
+	items: 1,
+	slideBy: 'page',
+	controls: false,
+	autoplay: true,
+	autoplayButtonOutput: false,
+	navContainer: DOM.blogSliderDots,
+	mouseDrag: true,
+	responsive: {
+		576: {
+			items: 2
+		},
+		992: {
+			items: 3
+		}
+	}
+
+});
+
+furnitureSectionSlider();
+blogSectionSlider();
