@@ -22,8 +22,8 @@ let activeSlide = 0;
 const imageLeft = document.createElement('img');
 imageLeft.setAttribute("class", "slider-left" );
 imageLeft.src = leftSlideList[activeSlide].img;
-var firstElement = document.querySelector('.section-promo .product-box .photo');
-firstElement.insertBefore(imageLeft, firstElement.firstChild);
+const firstElementLeft = document.querySelector('.section-promo .product-box .photo');
+firstElementLeft.insertBefore(imageLeft, firstElementLeft.firstChild);
 
 //funkcja zmieniająca aktywną kropkę w hederze
 const changeDot = () => {
@@ -37,9 +37,9 @@ const changeSlide = () => {
 	activeSlide++;
 	if (activeSlide === leftSlideList.length) {
 		activeSlide = 0;
-}
-imageLeft.src = leftSlideList[activeSlide].img;
-changeDot(); 
+	}
+	imageLeft.src = leftSlideList[activeSlide].img;
+	changeDot(); 
 };
 
 //ustaw interval
@@ -58,8 +58,8 @@ function dotsChangeSlide () {
 }
 
 //czekaj na kliknęcie w dot i wywował funckję
-var topDots = document.querySelectorAll('.topDot');
-for(var i = 0; i < topDots.length; i++){
+const topDots = document.querySelectorAll('.topDot');
+for(let i = 0; i < topDots.length; i++){
 	topDots[i].addEventListener('click', function(event) { 
     	dotsChangeSlide();
     });
@@ -83,18 +83,18 @@ let activeRightPhoto = 0; //pierwsze aktywne zdjęcie
 const imageRight = document.createElement('img');
 imageRight.setAttribute("class", "slider-right" );
 imageRight.src = rightSildeList[activeRightPhoto].img;
-var firstElement = document.querySelector('.section-promo .promo-slide .photo');
-firstElement.insertBefore(imageRight, firstElement.firstChild);
+const firstElementRight = document.querySelector('.section-promo .promo-slide .photo');
+firstElementRight.insertBefore(imageRight, firstElementRight.firstChild);
 
 //czekaj na kliknęcie w lewą strzałkę i wywowałaj funckję 
-var leftButton = document.querySelector('.left-button');
+const leftButton = document.querySelector('.left-button');
 leftButton.addEventListener('click', function(event) { 
 	activeRightPhoto--;
 	changeLeftSlide();
 });
 
 //czekaj na kliknęcie w prawą strzałkę i wywowałaj funckję 
-var rightButton = document.querySelector('.right-button');
+const rightButton = document.querySelector('.right-button');
 rightButton.addEventListener('click', function(event) {
 	activeRightPhoto++; 
     changeRightSlide();
