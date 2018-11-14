@@ -1,0 +1,320 @@
+.section-markup {
+    padding-bottom: 50px;
+
+    .mleft {
+        margin: 0;
+        padding-left: 15px;
+        position: relative;
+    }
+    .markup-left {
+        width: 100%;      
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+    }
+
+    .mleft:before {
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        content: '';
+        transform: scale(0.96);
+        bottom: 5%;
+        left: 5%;
+        right: 5%;
+        top: 5%;
+        background-size: cover;
+    }
+
+    .textphoto {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        color: $total-white;
+    }
+    .room {
+        font-size: 1.9em;
+        line-height:90%; 
+    }
+    .sofa {
+        font-size: 2.2em;
+        line-height:50%;
+        font-weight: 700; 
+    }
+    .price {
+        font-size: 3em;
+        border: 4px solid $total-white;;
+        text-align: center;
+         padding: 0 10px;
+    }
+
+
+    .mright {
+        position: relative;
+        margin: 0;
+        padding-left: 1%;
+    }
+
+    .markupRightTop {
+        padding-bottom: 4%;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+            
+    .textRightTop {
+        position: absolute;
+        top: 8%;
+        right: 10%;
+        .office {
+            font-size: 2.2em;
+            font-weight: 100;
+            display:inline;
+            line-height:80%; 
+        }  
+        .chair {
+            font-size: 2.2em;
+            display:inline;
+            font-weight: 700;
+        }
+        .collection {
+            font-size: 1.5em;
+            line-height:80%; 
+        }
+        .dolar {
+            font-size: 2.2em;
+            color: $primary;
+            font-weight: 700;
+            line-height:80%; 
+        }
+    }
+
+    .textRightBottom {
+        position: absolute;
+        top: 68%;
+        right: 5%;
+        .special {
+            font-size: 1.6em;
+            font-weight: 100;
+            display:inline;
+        }  
+        .collection2 {
+            font-size: 1.6em;
+            display:inline;
+            font-weight: 700;
+        }
+        .save {
+            font-size: 1em;
+        }
+    }
+}
+
+    
+@media (max-width: 575.98px) {
+    .section-markup {
+        .mleft:before {
+            left: 8%;
+            right: 8%;
+        }
+        
+        .textphoto {
+            top: 40%; 
+            left: 15%;
+            .room {
+                font-size: 0.7em;
+            }
+            .sofa {
+                font-size: 1em;
+                line-height:10%; 
+            }
+            .price {
+                font-size: 1.3em;
+                border: 2px solid $total-white;
+            }
+        }
+        .textRightTop {
+            top: 5% ;
+            .office {
+                font-size: 1.1em;
+            }  
+            .chair {
+                font-size: 1.1em;
+            }
+            .collection {
+                font-size: 0.5em;
+                line-height:30%; 
+            }
+            .dolar {
+                font-size: 1.1em;
+                line-height:10%; 
+            }
+        }
+
+        .textRightBottom {
+            top: 63%;
+            right: 10%;
+            .special {
+                font-size: 0.6em;
+            }  
+            .collection2 {
+                font-size: 0.6em;
+            }
+            .save {
+                font-size: 0.4em;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .section-markup {
+        .mleft:before {
+            left: 8%;
+            right: 8%;
+        }
+        
+        .textphoto {
+            top: 30%;
+            left: 15%;
+        }
+        .room {
+            font-size: 1em;
+        }
+        .sofa {
+            font-size: 1.3em;
+            line-height:10%; 
+        }
+        .price {
+            font-size: 1.8em;
+            border: 3px solid $total-white;
+        }
+        
+        .textRightTop {
+            top: 4%;
+            .office {
+                font-size: 1.2em;
+            }  
+            .chair {
+                font-size: 1.2em;
+            }
+            .collection {
+                font-size: 0.7em;
+                line-height:30%; 
+            }
+            .dolar {
+                font-size: 1.2em;
+                line-height:10%; 
+            }
+        }
+
+        .textRightBottom {
+            top: 62%;
+            right: 8%;
+            .special {
+                font-size: 0.7em;
+            }  
+            .collection2 {
+                font-size: 0.7em;
+            }
+            .save {
+                font-size: 0.5em;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section-markup {
+        .textphoto {
+            top: 30%;
+        }
+        .room {
+            font-size: 1.4em;
+        }
+        .sofa {
+            font-size: 1.8em;
+        }
+        .price {
+            font-size: 2.4em;
+        }
+
+        .textRightTop {
+            top: 6%;
+            .office {
+                font-size: 1.6em;
+            }  
+            .chair {
+                font-size: 1.6em;
+            }
+            .collection {
+                font-size: 1.1em;
+            }
+            .dolar {
+                font-size: 1.6em;
+                line-height:30%; 
+            }
+        }
+
+        .textRightBottom {
+            right: 6%;
+            .special {
+                font-size: 1em;
+            }  
+            .collection2 {
+                font-size: 1em;
+            }
+            .save {
+                font-size: 0.7em;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .section-markup {
+        .textphoto {
+            top: 38%;
+        }
+        .room {
+            font-size: 1.7em;
+        }
+        .sofa {
+            font-size: 2em;
+        }
+        .price {
+            font-size: 2.8em;
+        }
+
+        .textRightTop {
+            top: 5%;
+            .office {
+                font-size: 2.1em;
+            }  
+            .chair {
+                font-size: 2.1em;
+            }
+            .collection {
+                font-size: 1.3em;
+            }
+            .dolar {
+                font-size: 2.1em;
+                line-height:50%; 
+            }
+        }
+
+        .textRightBottom {
+            .special {
+                font-size: 1.4em;
+            }  
+            .collection2 {
+                font-size: 1.4em;
+
+            }
+            .save {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
