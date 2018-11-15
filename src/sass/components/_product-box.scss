@@ -1,92 +1,96 @@
-.product-box {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  margin-bottom: 2rem;
+.product-box-space {
+  padding: 15px;
+}
 
-  .photo {
-    position: relative;
-    padding: 80% 10px 0 10px;
+  .product-box {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
 
-    background: {
-      color: #f4f5f7;
-      size: contain;
-      position: center;
-      repeat: no-repeat;
-    }
-
-    overflow: hidden;
-    align-items: flex-end;
-
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .sale {
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #292929;
-      border-radius: 50%;
-      color: #ffffff;
-      padding: 30px 15px 5px 15px;
-    }
-
-    .buttons {
+    .photo {
       position: relative;
-      display: flex;
-      justify-content: space-between;
-      visibility: hidden;
-    }
+      padding: 80% 10px 0 10px;
 
-
-  }
-
-  &:hover {
-
-    .buttons {
-      visibility: visible;
-    }
-
-    .price-button {
-      background-color: $primary;
-    }
-  }
-
-  .content {
-    text-align: center;
-    padding: 20px;
-
-    h5 {
-      color: $primary;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 1px;
-    }
-
-    .stars {
-      display: flex;
-      justify-content: center;
-      flex-direction: row-reverse;
-
-      &:hover>a {
-        @extend .far;
-        color: $primary;
+      background: {
+        color: #f4f5f7;
+        size: contain;
+        position: center;
+        repeat: no-repeat;
       }
 
-      a {
-        text-decoration: none;
-        color: rgb(42, 42, 42);
-        @extend .far;
-        @extend .fa-star;
+      overflow: hidden;
+      align-items: flex-end;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .sale {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #292929;
+        border-radius: 50%;
+        color: #ffffff;
+        padding: 30px 15px 5px 15px;
+      }
+
+      .buttons {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        visibility: hidden;
+      }
 
 
-        &.full {
-          @extend .fas;
+    }
+
+    &:hover {
+
+      .buttons {
+        visibility: visible;
+      }
+
+      .price-button {
+        background-color: $primary;
+      }
+    }
+
+    .content {
+      text-align: center;
+      padding: 20px;
+
+      h5 {
+        color: $primary;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+      }
+
+      .stars {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+
+        &:hover>a {
+          @extend .far;
+          color: $primary;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(42, 42, 42);
+          @extend .far;
+          @extend .fa-star;
+
+          &.full {
+            @extend .fas;
+          }
         }
 
         &.star-rank {
@@ -115,41 +119,54 @@
       }
     }
 
-  }
 
-  .line {
-    margin: 0 10px;
-    border-bottom: 1px solid #2a2a2a;
-    position: relative;
 
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 50%;
-      width: 30px;
-      border-bottom: 4px solid $primary;
-      transform: translateX(-50%);
-    }
-  }
+    .line {
+      margin: 0 10px;
+      border-bottom: 1px solid #2a2a2a;
+      position: relative;
 
-  .actions {
-    padding: 15px 10px 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .price {
-      display: flex;
-      flex-direction: row;
-
-      .old-price {
-        margin-right: 5px;
-        background-color: $old-price-bg;
-        color: $old-price-line;
-        text-decoration: line-through $old-price-line;
-        opacity: 0.7;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        width: 30px;
+        border-bottom: 4px solid $primary;
+        transform: translateX(-50%);
       }
     }
+
+    .actions {
+      padding: 15px 10px 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .price {
+        display: flex;
+        flex-direction: row;
+
+        .old-price {
+          margin-right: 5px;
+          background-color: $old-price-bg;
+          color: $old-price-line;
+          text-decoration: line-through $old-price-line;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+
+@media screen and (max-width: $breakpoint-lg) {
+  .product-box-space {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .product-box-space {
+    padding: 5px;
   }
 }
