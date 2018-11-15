@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Furnitures shop</title>
+
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/tiny-slider.css">
 </head>
 
 <body>
@@ -309,6 +311,7 @@
       </div>
     </div>
   </div>
+
   <div class="section--products">
     <div class="container">
       <div class="panel-bar">
@@ -326,16 +329,25 @@
             </ul>
           </div>
           <div class="col-auto dots">
-            <ul>
-              <li><a href="#" class="active"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+            <ul id="dots">
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
+              <li><a></a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+      <div class="furniture-slider" id="furniture-slider">
+
+        <div class="product-box-space">
           <div class="product-box">
             <div class="photo">
               <img src="./images/photo-fur01.png">
@@ -348,11 +360,11 @@
             <div class="content">
               <h5>Aenean Ru Bristique</h5>
               <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="full star-rank"></a>
+                <a class="full star-rank"></a>
               </div>
             </div>
             <div class="line"></div>
@@ -363,12 +375,12 @@
               </div>
               <div class="price">
                 <div class="btn-main-small no-hover old-price">$ 40.00</div>
-                <div class="btn-main-small no-hover">$ 30.00</div>
+                <div class="btn-main-small price-button no-hover">$ 30.00</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="product-box-space">
           <div class="product-box">
             <div class="photo">
               <img src="./images/photo-fur02.png">
@@ -381,11 +393,11 @@
             <div class="content">
               <h5>Aenean Ru Bristique</h5>
               <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a class="star-rank not-hover"></a>
+                <a class="star-rank not-hover"></a>
+                <a class="star-rank hover"></a>
+                <a class="full star-rank hover"></a>
+                <a class="full star-rank hover"></a>
               </div>
             </div>
             <div class="line"></div>
@@ -400,7 +412,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="product-box-space">
           <div class="product-box">
             <div class="photo">
               <img src="./images/photo-fur03.png">
@@ -413,11 +425,11 @@
             <div class="content">
               <h5>Aenean Ru Bristique</h5>
               <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="full star-rank"></a>
+                <a class="full star-rank"></a>
               </div>
             </div>
             <div class="line"></div>
@@ -428,12 +440,12 @@
               </div>
               <div class="price">
                 <div class="btn-main-small no-hover old-price">$ 45.00</div>
-                <div class="btn-main-small no-hover">$ 30.00</div>
+                <div class="btn-main-small price-button no-hover">$ 30.00</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="product-box-space">
           <div class="product-box">
             <div class="photo">
               <img src="./images/photo-fur04.png">
@@ -446,11 +458,11 @@
             <div class="content">
               <h5>Aenean Ru Bristique</h5>
               <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="full star-rank"></a>
+                <a class="full star-rank"></a>
               </div>
             </div>
             <div class="line"></div>
@@ -465,7 +477,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="product-box-space">
           <div class="product-box">
             <div class="photo">
               <img src="./images/photo-fur04.png">
@@ -478,11 +490,11 @@
             <div class="content">
               <h5>Aenean Ru Bristique</h5>
               <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="full star-rank"></a>
+                <a class="full star-rank"></a>
               </div>
             </div>
             <div class="line"></div>
@@ -497,7 +509,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="product-box-space">
           <div class="product-box">
             <div class="photo">
               <img src="./images/photo-fur03.png">
@@ -510,11 +522,11 @@
             <div class="content">
               <h5>Aenean Ru Bristique</h5>
               <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="full star-rank"></a>
+                <a class="full star-rank"></a>
               </div>
             </div>
             <div class="line"></div>
@@ -525,12 +537,12 @@
               </div>
               <div class="price">
                 <div class="btn-main-small no-hover old-price">$ 40.00</div>
-                <div class="btn-main-small no-hover">$ 30.00</div>
+                <div class="btn-main-small price-button no-hover">$ 30.00</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="product-box-space">
           <div class="product-box">
             <div class="photo">
               <img src="./images/photo-fur02.png">
@@ -543,11 +555,11 @@
             <div class="content">
               <h5>Aenean Ru Bristique</h5>
               <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="full star-rank"></a>
+                <a class="full star-rank"></a>
               </div>
             </div>
             <div class="line"></div>
@@ -562,7 +574,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="product-box-space">
           <div class="product-box">
             <div class="photo">
               <img src="./images/photo-fur01.png">
@@ -575,11 +587,11 @@
             <div class="content">
               <h5>Aenean Ru Bristique</h5>
               <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="star-rank"></a>
+                <a class="full star-rank"></a>
+                <a class="full star-rank"></a>
               </div>
             </div>
             <div class="line"></div>
@@ -595,99 +607,100 @@
           </div>
         </div>
       </div>
+
     </div>
-  </div>
-  <div class="section--blog-posts">
-    <div class="container">
-      <div class="panel-bar">
-        <div class="row no-gutters align-items-end">
-          <div class="col-auto heading">
-            <h3>Latest blog</h3>
-          </div>
-          <div class="col"></div>
-          <div class="col-auto dots">
-            <ul>
-              <li><a href="#" class="active"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="post-box">
-            <a href="#">
-              <div class="cover">
-                <img src="./images/blog_01.png">
-                <div class="details">
-                  <div class="date">
-                    <i class="fas fa-calendar-alt"></i> 15 Jan 2016
-                  </div>
-                  <div class="comments">
-                    <i class="fas fa-comments"></i> 4 Comments
-                  </div>
-                </div>
-              </div>
-              <div class="post-info">
-                <h5>Products That Fight Static </h5>
-                <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
-                  vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
-                <div class="more">
-                  <span class="btn-main">Read more</span>
-                </div>
-              </div>
-            </a>
+    <div class="section--blog-posts">
+      <div class="container">
+        <div class="panel-bar">
+          <div class="row no-gutters align-items-end">
+            <div class="col-auto heading">
+              <h3>Latest blog</h3>
+            </div>
+            <div class="col"></div>
+            <div class="col-auto dots">
+              <ul>
+                <li><a href="#" class="active"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="post-box">
-            <a href="#">
-              <div class="cover">
-                <img src="./images/blog_02.png">
-                <div class="details">
-                  <div class="date">
-                    <i class="fas fa-calendar-alt"></i> 15 Jan 2016
-                  </div>
-                  <div class="comments">
-                    <i class="fas fa-comments"></i> 4 Comments
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="post-box">
+              <a href="#">
+                <div class="cover">
+                  <img src="./images/blog_01.png">
+                  <div class="details">
+                    <div class="date">
+                      <i class="fas fa-calendar-alt"></i> 15 Jan 2016
+                    </div>
+                    <div class="comments">
+                      <i class="fas fa-comments"></i> 4 Comments
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="post-info">
-                <h5>Products That Fight Static </h5>
-                <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
-                  vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
-                <div class="more">
-                  <span class="btn-main">Read more</span>
+                <div class="post-info">
+                  <h5>Products That Fight Static </h5>
+                  <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
+                    vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                  <div class="more">
+                    <span class="btn-main">Read more</span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="post-box">
-            <a href="#">
-              <div class="cover">
-                <img src="./images/blog_03.png">
-                <div class="details">
-                  <div class="date">
-                    <i class="fas fa-calendar-alt"></i> 15 Jan 2016
-                  </div>
-                  <div class="comments">
-                    <i class="fas fa-comments"></i> 4 Comments
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="post-box">
+              <a href="#">
+                <div class="cover">
+                  <img src="./images/blog_02.png">
+                  <div class="details">
+                    <div class="date">
+                      <i class="fas fa-calendar-alt"></i> 15 Jan 2016
+                    </div>
+                    <div class="comments">
+                      <i class="fas fa-comments"></i> 4 Comments
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="post-info">
-                <h5>Products That Fight Static </h5>
-                <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
-                  vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
-                <div class="more">
-                  <span class="btn-main">Read more</span>
+                <div class="post-info">
+                  <h5>Products That Fight Static </h5>
+                  <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
+                    vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                  <div class="more">
+                    <span class="btn-main">Read more</span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="post-box">
+              <a href="#">
+                <div class="cover">
+                  <img src="./images/blog_03.png">
+                  <div class="details">
+                    <div class="date">
+                      <i class="fas fa-calendar-alt"></i> 15 Jan 2016
+                    </div>
+                    <div class="comments">
+                      <i class="fas fa-comments"></i> 4 Comments
+                    </div>
+                  </div>
+                </div>
+                <div class="post-info">
+                  <h5>Products That Fight Static </h5>
+                  <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
+                    vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                  <div class="more">
+                    <span class="btn-main">Read more</span>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -739,8 +752,11 @@
                 <li><a href="#">Returns</a></li>
                 <li><a href="#">Shipping</a></li>
               </ul>
+    
+              </div>
+              <img src="./images/cards.png">
+
             </div>
-            <img src="./images/cards.png">
           </div>
         </div>
       </div>
@@ -761,11 +777,14 @@
               <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
               <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
             </ul>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/min/tiny-slider.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
