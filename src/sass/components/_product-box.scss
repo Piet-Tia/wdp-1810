@@ -1,5 +1,6 @@
 .product-box-space {
   padding: 15px;
+}
 
   .product-box {
     background-color: #ffffff;
@@ -90,7 +91,7 @@
           &.full {
             @extend .fas;
           }
-        } //nie wiadomo
+        }
 
         &.star-rank {
           cursor: pointer;
@@ -118,7 +119,7 @@
       }
     }
 
-    //nie wiadomo
+
 
     .line {
       margin: 0 10px;
@@ -156,7 +157,7 @@
       }
     }
   }
-}
+
 
 @media screen and (max-width: $breakpoint-lg) {
   .product-box-space {
