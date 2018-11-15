@@ -1,0 +1,37 @@
+.brands {
+	padding: 20px;
+	
+}
+
+.brands__slider {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	box-shadow: 1px 1px 5px lightgrey;
+}
+
+.brands__arrow {
+	@extend .hover-animation;
+	color: $total-white;
+	background-color: $header-bg;
+	box-shadow: 10px 10px 5px solid black;
+
+	&:hover{
+		color: $primary;
+	}
+}
+
+.brands__item-space {
+	width: 960px;
+	height: 110px;
+	overflow: hidden;
+}
+
+.brands__item {
+	display: block;
+	float: left;
+	width: 150px;
+	height: 100px;
+	margin: 5px;
+	box-shadow: 1px 1px 5px lightgrey;
+}
