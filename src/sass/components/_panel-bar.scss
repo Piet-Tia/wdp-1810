@@ -1,7 +1,7 @@
 .panel-bar {
   margin-bottom: 30px;
-  
-  .row > * {
+
+  .row>* {
     border-bottom: 4px solid #e2e2e2;
   }
 
@@ -29,17 +29,19 @@
 
   .menu {
     text-align: center;
+
     ul {
       margin: 0;
       padding: 0;
       list-style: none;
+
       li {
         display: inline-block;
         margin: 0 0.5rem;
         font-weight: 600;
 
         a {
-          color: rgb(42,42,42);
+          color: rgb(42, 42, 42);
           position: relative;
 
           text-decoration: none;
@@ -76,14 +78,22 @@
       list-style: none;
       background-color: #ffffff;
       transform: translateY(15px);
+      cursor: default;
 
       li {
         display: inline-block;
         margin-left: 0.5rem;
+        outline: 0;
+        cursor: pointer;
+
+        &.tns-nav-active a {
+          background-color: $primary;
+        }
 
         a {
           @extend .hover-animation;
           display: block;
+
           width: 13px;
           height: 13px;
           border-radius: 6px;
@@ -92,6 +102,76 @@
           &.active,
           &:hover {
             background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .panel-bar {
+    .heading {
+      h3 {
+        font-size: 14px;
+      }
+    }
+
+    .menu {
+      ul {
+        li {
+          margin: 0 0.3rem;
+
+          a {
+            font-size: 14px;
+
+            &::before {
+              bottom: -5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-xxs) {
+  .panel-bar {
+    .heading {
+      h3 {
+        font-size: 12px;
+      }
+    }
+
+    .menu {
+      ul {
+        li {
+          margin: 0;
+
+          a {
+            font-size: 12px;
+
+            &::before {
+              bottom: -6px;
+            }
+          }
+        }
+      }
+    }
+
+    .dots {
+      ul {
+        padding: 0 0 0 0.5rem;
+        background-color: #ffffff;
+        transform: translateY(15px);
+
+        li {
+          margin-left: 0.1rem;
+
+          a {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
           }
         }
       }

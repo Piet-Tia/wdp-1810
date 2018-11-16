@@ -260,7 +260,7 @@ header {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $breakpoint-md) {
   header {
 
     .menu-bar {
@@ -287,7 +287,52 @@ header {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: $breakpoint-sm) {
+  header {
+
+    .top-bar__right-text {
+      display: none;
+    }
+
+    .company-claim {
+      position: relative;
+
+      .phone-number {
+        display: none;
+      }
+
+      .logo__column {
+        width: 50%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+
+      .company-claim__logo {
+        float: left;
+        display: block;
+      }
+
+      .cart {
+        width: 50%;
+        position: absolute;
+        top: 10px;
+        right: 0;
+
+        .phone-number--mobile {
+          display: block;
+
+          p {
+            font-size: 14px;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-xxs) {
   header {
 
     .menu-bar {
@@ -387,51 +432,6 @@ header {
           transform: translateY(-50%);
         }
 
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  header {
-
-    .top-bar__right-text {
-      display: none;
-    }
-
-    .company-claim {
-      position: relative;
-
-      .phone-number {
-        display: none;
-      }
-
-      .logo__column {
-        width: 50%;
-        position: absolute;
-        top: 10px;
-        left: 0;
-      }
-
-      .company-claim__logo {
-        float: left;
-        display: block;
-      }
-
-      .cart {
-        width: 50%;
-        position: absolute;
-        top: 10px;
-        right: 0;
-
-        .phone-number--mobile {
-          display: block;
-
-          p {
-            font-size: 14px;
-            float: right;
-          }
-        }
       }
     }
   }
