@@ -26,7 +26,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100%; // THIS WAS ONCE 100% AND ONCE AUTO
       }
 
       .sale {
@@ -158,6 +158,18 @@
     }
   }
 
+
+@media screen and (max-width: $breakpoint-lg) {
+  .product-box-space {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .product-box-space {
+    padding: 5px;
+  }
+}
 
 @media screen and (max-width: $breakpoint-lg) {
   .product-box-space {
