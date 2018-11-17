@@ -114,54 +114,64 @@
 @media (max-width: 575.98px) {
     .section-deals {
         .mleft:before {
-            left: 8%;
-            right: 8%;
+            left: 5%;
+            right: 5%;
         }
         
         .textphoto {
-            top: 30%; 
-            left: 15%;
-            .room {
-                font-size: 0.7em;
-            }
-            .sofa {
-                font-size: 1em;
-                line-height:10%; 
-            }
-            .price {
-                font-size: 1.3em;
-                border: 2px solid $total-white;
-            }
+            top: 35%;
+            left: 10%;
         }
+        .room {
+            font-size: 1.8em;
+        }
+        .sofa {
+            font-size: 2.1em;
+            line-height:50%; 
+        }
+        .price {
+            font-size: 2.7em;
+            border: 3px solid $total-white;
+        }
+
+        .dealsRightTop {
+            padding-top: 4%;
+            padding-left: 2%;
+        }
+
         .textRightTop {
-            top: 5% ;
+            top: 8%;
             .office {
-                font-size: 1.1em;
+                font-size: 2.1em;
             }  
             .chair {
-                font-size: 1.1em;
+                font-size: 2.1em;
             }
             .collection {
-                font-size: 0.5em;
-                line-height:30%; 
+                font-size: 1.3em;
+                line-height:80%; 
             }
             .dolar {
-                font-size: 1.1em;
-                line-height:10%; 
+                font-size: 2.1em;
+                line-height:60%; 
             }
         }
 
+        .dealsRightBottom {
+            padding-left: 2%;
+        }
+
         .textRightBottom {
-            top: 63%;
-            right: 10%;
+            top: 70%;
+            right: 8%;
             .special {
-                font-size: 0.6em;
+                font-size: 1.2em;
             }  
             .collection2 {
-                font-size: 0.6em;
+                font-size: 1.2em;
             }
             .save {
-                font-size: 0.4em;
+                font-size: 0.9em;
             }
         }
     }
@@ -170,55 +180,64 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .section-deals {
         .mleft:before {
-            left: 8%;
-            right: 8%;
+            left: 5%;
+            right: 5%;
         }
         
         .textphoto {
-            top: 30%;
-            left: 15%;
+            top: 40%;
+            left: 10%;
         }
         .room {
-            font-size: 1em;
+            font-size: 2em;
         }
         .sofa {
-            font-size: 1.3em;
-            line-height:10%; 
+            font-size: 2.3em;
+            line-height:50%; 
         }
         .price {
-            font-size: 1.8em;
+            font-size: 3em;
             border: 3px solid $total-white;
         }
         
+        .dealsRightTop {
+            padding-top: 4%;
+            padding-left: 2%;
+        }
+        
         .textRightTop {
-            top: 4%;
+            top: 10%;
             .office {
-                font-size: 1.2em;
+                font-size: 2.6em;
             }  
             .chair {
-                font-size: 1.2em;
+                font-size: 2.6;
             }
             .collection {
-                font-size: 0.7em;
-                line-height:30%; 
+                font-size: 1.6em;
+                line-height:80%; 
             }
             .dolar {
-                font-size: 1.2em;
-                line-height:10%; 
+                font-size: 2.6em;
+                line-height:60%; 
             }
         }
 
+        .dealsRightBottom {
+            padding-left: 2%;
+        }
+
         .textRightBottom {
-            top: 62%;
+            top: 70%;
             right: 8%;
             .special {
-                font-size: 0.7em;
+                font-size: 1.4em;
             }  
             .collection2 {
-                font-size: 0.7em;
+                font-size: 1.4em;
             }
             .save {
-                font-size: 0.5em;
+                font-size: 1em;
             }
         }
     }
