@@ -111,7 +111,7 @@
 }
 
     
-@media (max-width: 575.98px) {
+@media (max-width: $breakpoint-xxs) {
     .section-deals {
         .mleft:before {
             left: 5%;
@@ -177,7 +177,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: $breakpoint-xxs) and (max-width: $breakpoint-sm) {
     .section-deals {
         .mleft:before {
             left: 5%;
@@ -243,7 +243,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
     .section-deals {
         .textphoto {
             top: 30%;
@@ -290,7 +290,7 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
     .section-deals {
         .textphoto {
             top: 38%;
