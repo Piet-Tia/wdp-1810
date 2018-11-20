@@ -1,4 +1,10 @@
 
+const DOM = {};
+DOM.furnitureBedSlider = document.getElementById("furniture-bed-slider");
+DOM.furnitureSliderDots = document.getElementById("dots");
+
+
+
 // function for freezing star rating of products after mouse click
 $('.star-rank').click(function () {
 	$(this).removeClass('star-full star-outline not-hover hover');
@@ -12,17 +18,14 @@ $('.star-rank').click(function () {
 
 
 // sliders for furniture section
-const furnitureSlider = document.getElementById("furniture-slider");
-const furnitureSliderDots = document.getElementById("dots");
-
-const slider = tns({
-	container: furnitureSlider,
+let furnitureBedSlider = tns({
+	container: DOM.furnitureBedSlider,
 	items: 1,
 	slideBy: 'page',
 	controls: false,
 	autoplay: true,
 	autoplayButtonOutput: false,
-	navContainer: furnitureSliderDots,
+	navContainer: DOM.furnitureSliderDots,
 	mouseDrag: true,
 	responsive: {
 		576: {
@@ -37,4 +40,16 @@ const slider = tns({
 	}
 
 });
+
+$('#destroy').click(function(){
+	furnitureBedSlider.destroy();
+})
+
+$('#rebuild').click(function(){
+	furnitureBedSlider = furnitureBedSlider.rebuild();
+})
+
+$('#info').click(function(){
+	console.log(furnitureBedSlider.getInfo().navContainer);
+})
 // end of sliders for furniture section
