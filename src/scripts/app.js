@@ -1,3 +1,5 @@
+
+// function for freezing star rating of products after mouse click
 $('.star-rank').click(function () {
 	$(this).removeClass('star-full star-outline not-hover hover');
 	$(this).siblings().removeClass('star-full star-outline not-hover hover');
@@ -6,10 +8,12 @@ $('.star-rank').click(function () {
 	$(this).nextAll().addClass('star-full');
 	$(this).prevAll().addClass('star-outline');
 })
+//end of function for freezing star rating of products after mouse click
 
+
+// sliders for furniture section
 const furnitureSlider = document.getElementById("furniture-slider");
 const furnitureSliderDots = document.getElementById("dots");
-
 
 const slider = tns({
 	container: furnitureSlider,
@@ -33,3 +37,4 @@ const slider = tns({
 	}
 
 });
+// end of sliders for furniture section
