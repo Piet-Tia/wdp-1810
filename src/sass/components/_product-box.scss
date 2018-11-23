@@ -1,11 +1,11 @@
-.furniture-slider {
+.furniture-slider-fade {
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 0.25s;
 }
 
 .furniture-slider-hidden {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.25s;
 }
 
 .furniture-slider-gone {
