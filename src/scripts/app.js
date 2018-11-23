@@ -1,3 +1,6 @@
+const DOM = {}; // object containing variables for DOM calls
+
+
 // \/ freezing star rating of products after mouse click \/
 
 $('.star-rank').click(function () {
@@ -8,13 +11,13 @@ $('.star-rank').click(function () {
 	$(this).nextAll().addClass('star-full');
 	$(this).prevAll().addClass('star-outline');
 })
-
 //end of function for freezing star rating of products after mouse click (8 lines)
+
 
 
 // \/ FURNITURE SECTION SLIDERS \/
 
-const DOM = {};
+
 DOM.furnitureDots = $(".furniture-dots");
 DOM.furnitureSliders = $(".furniture-slider")
 
@@ -46,7 +49,7 @@ DOM.furnitureDiningSliderDots = document.getElementById("furniture-dining-dots")
 
 // \/ creating separate sliders for each furniture tab \/
 
-sliderBed = tns({
+const sliderBed = tns({
 	container: DOM.furnitureBedSlider,
 	items: 1,
 	slideBy: 'page',
@@ -68,7 +71,7 @@ sliderBed = tns({
 	}
 });
 
-sliderChair = tns({
+const sliderChair = tns({
 	container: DOM.furnitureChairSlider,
 	items: 1,
 	slideBy: 'page',
@@ -90,7 +93,7 @@ sliderChair = tns({
 	}
 });
 
-sliderSofa = tns({
+const sliderSofa = tns({
 	container: DOM.furnitureSofaSlider,
 	items: 1,
 	slideBy: 'page',
@@ -112,7 +115,7 @@ sliderSofa = tns({
 	}
 });
 
-sliderTable = tns({
+const sliderTable = tns({
 	container: DOM.furnitureTableSlider,
 	items: 1,
 	slideBy: 'page',
@@ -134,7 +137,7 @@ sliderTable = tns({
 	}
 });
 
-sliderDining = tns({
+const sliderDining = tns({
 	container: DOM.furnitureDiningSlider,
 	items: 1,
 	slideBy: 'page',
@@ -168,22 +171,22 @@ function goToFirstSlide(slider){
 
 $('#furniture-tab-bed').click(function(){
 	$('.furniture-tab').removeClass('active');
-	$(this).addClass('active'); // switches underscore in tab name to  new tab
+	$(this).addClass('active'); // switches underscore in tab name to new tab
 
 	DOM.furnitureDots.addClass('furniture-slider-hidden');
 	DOM.furnitureSliders.addClass('furniture-slider-hidden'); // adds opacity 0 with transition 250
 	
 	setTimeout(function(){
-		goToFirstSlide(sliderBed);
+		goToFirstSlide(sliderBed); // moves to first slide and resets countdown
 		DOM.furnitureDots.addClass('furniture-slider-gone');
 		DOM.furnitureSliders.addClass('furniture-slider-gone'); // display none to all
 		DOM.furnitureBedSliderSpace.removeClass('furniture-slider-gone');
-		DOM.furnitureBedSliderDotsSpace.removeClass('furniture-slider-gone'); // removes display none from active tab
+		DOM.furnitureBedSliderDotsSpace.removeClass('furniture-slider-gone'); // removes display none from active (new) slider
 	},250);
 	
 	setTimeout(function(){
 		DOM.furnitureBedSliderDotsSpace.removeClass('furniture-slider-hidden');
-		DOM.furnitureBedSliderSpace.removeClass('furniture-slider-hidden'); // restores opacity 1
+		DOM.furnitureBedSliderSpace.removeClass('furniture-slider-hidden'); // restores opacity 1 with transition 250
 	},300);
 })
 
@@ -274,3 +277,32 @@ $('#furniture-tab-dining').click(function(){
 // /\ end of switching furniture tabs /\ 
 
 // /\ END OF FURNITURE SECTION SLIDERS /\
+
+
+
+// \/ SLIDER FOR BLOG SECTION \/
+
+
+
+DOM.blogSlider = document.getElementById("blog-slider");
+DOM.blogSliderDots = document.getElementById("blog-dots");
+
+const blogSectionSlider = tns({
+	container: DOM.blogSlider,
+	items: 1,
+	slideBy: 'page',
+	controls: false,
+	autoplay: true,
+	autoplayButtonOutput: false,
+	navContainer: DOM.blogSliderDots,
+	mouseDrag: true,
+	responsive: {
+		576: {
+			items: 2
+		},
+		992: {
+			items: 3
+		}
+	}
+
+});
